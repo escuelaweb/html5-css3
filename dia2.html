@@ -71,12 +71,12 @@
             </legend>
             <div class="campo">
               <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre">
+              <input required="true" type="text" id="nombre" name="nombre">
             </div>
 
             <div class="campo">
               <label for="correo">Correo</label>
-              <input type="email" id="correo" name="correo">
+              <input placeholder="higher.vnf@gmail.com" type="email" id="correo" name="correo">
             </div>
 
             <div class="campo">
@@ -92,7 +92,12 @@
             <div class="campo">
               <label for="cantidad">Cantidades</label>
               <input type="range" min="0" max="10" id="cantidad" name="cantidad">
-              <input type="text" id="numero_cantidad">
+              <span id="numero_cantidad"></span>
+            </div>
+
+            <div class="campo">
+              <label for="direccion">Direccion Web</label>
+              <input type="url" id="direccion" name="direccion">
             </div>
 
             <div class="campo">
@@ -152,7 +157,7 @@
   <script>
   $(function() {
     $("#cantidad").on("change",function (){
-      $("#numero_cantidad").val($(this).val());
+      $("#numero_cantidad").text($(this).val());
     });
   });    
   </script>
