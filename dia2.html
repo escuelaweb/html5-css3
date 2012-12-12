@@ -92,6 +92,21 @@
             <div class="campo">
               <label for="cantidad">Cantidades</label>
               <input type="range" min="0" max="10" id="cantidad" name="cantidad">
+              <input type="text" id="numero_cantidad">
+            </div>
+
+            <div class="campo">
+              <label for="autocompletado">Algo</label>
+              <input list="browsers">
+
+              <datalist id="browsers">
+                <option value="IE">Internet Explorer</option>
+                <option value="Firefox">1.5</option>
+                <option value="Firefox">1.2</option>
+                <option value="Chrome">Chrome 2</option>
+                <option value="Opera">Opera 2</option>
+                <option value="Safari">Safari 2</option>
+              </datalist>
             </div>
 
             <div class="actions">
@@ -132,5 +147,15 @@
       <p>Todos los derechos reservados a MI!</p>
     </footer>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $("#cantidad").on("change",function (){
+      $("#numero_cantidad").val($(this).val());
+    });
+  });    
+  </script>
+
 </body>
 </html>

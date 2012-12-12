@@ -21,3 +21,23 @@
 .footer {
   clear: both;
 }
+
+.campo {
+  margin: 20px 0;
+}
+
+.campo label {
+  display: inline-block;
+  margin-right: right;
+  width: 200px;
+}
+
+.campo input {
+  display: inline-block;
+  margin-right: right;
+  width: 200px;
+}
+
+.campo #numero_cantidad {
+  width: 20px;
+}
