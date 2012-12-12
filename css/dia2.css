@@ -1,2 +1,23 @@
 /*dia2.css*/
 
+#page {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#main, #sidebar {
+  float: left;
+  margin-left: 20px;
+}
+
+#main {
+  width: 620px;
+}
+
+#sidebar {
+  width: 300px;
+}
+
+.footer {
+  clear: both;
+}
