@@ -24,6 +24,8 @@
 
 .campo {
   margin: 20px 0;
+  position: relative;
+  clear: both;
 }
 
 .campo label {
@@ -45,6 +47,7 @@
 
 /* slider root element */
 .slider {
+  background-color: #000000;
     height:9px;
     position:relative;
     cursor:pointer;
