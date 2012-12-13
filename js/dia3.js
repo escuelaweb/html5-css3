@@ -7,6 +7,10 @@ $(document).ready(function() {
   // $(":date").dateinput(); 
   // $("#formualariohtml5").validator();
 
+  // if(Modernizr.testAllProps("color")){
+  //   $(":range").rangeinput();
+  // }
+
   $('#formualariohtml5').html5form({
     
         messages : 'es', // Options 'en', 'es', 'it', 'de', 'fr', 'nl', 'be', 'br'
