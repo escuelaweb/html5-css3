@@ -48,53 +48,59 @@
 /* slider root element */
 .slider {
   background-color: #000000;
-    height:9px;
-    position:relative;
-    cursor:pointer;
-    border:1px solid #333;
-    width:220px; 
-    display: inline-block;
-    margin-top:10px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-box-shadow:inset 0 0 8px #000;
+  height:9px;
+  position:relative;
+  cursor:pointer;
+  border:1px solid #333;
+  width:220px; 
+  display: inline-block;
+  margin-top:10px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-box-shadow:inset 0 0 8px #000;
 }
 
 /* progress bar (enabled with progress: true) */
 .progress {
-    height:9px;
-    background-color:#C5FF00;
-    display:none;
-    opacity:0.6;
+  height:9px;
+  background-color:#C5FF00;
+  display:none;
+  opacity:0.6;
 }
 
 /* drag handle */
 .handle {
-    background: #E409AB;
-    height: 22px;
-    width: 22px;
-    top: -10px;
-    position:absolute;
-    display:block;
-    margin-top:1px;
-    border:1px solid #000;
-    cursor:move;
-    -moz-box-shadow:0 0 6px #000;
-    -webkit-box-shadow:0 0 6px #000;
-    -moz-border-radius:14px;
-    -webkit-border-radius:14px;
+  background: #E409AB;
+  height: 22px;
+  width: 22px;
+  top: -10px;
+  position:absolute;
+  display:block;
+  margin-top:1px;
+  border:1px solid #000;
+  cursor:move;
+  -moz-box-shadow:0 0 6px #000;
+  -webkit-box-shadow:0 0 6px #000;
+  -moz-border-radius:14px;
+  -webkit-border-radius:14px;
 
 }
 
 /* the input field */
 .campo .range {
-    display:inline-block;
-    border:1px inset #ddd;
-    font-size:20px;
-    margin:0 0 0 15px;
-    padding:3px 0;
-    text-align:center;
-    width:50px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
+  display              :inline-block;
+  border               :1px inset #ddd;
+  font-size            :20px;
+  margin               :0 0 0 15px;
+  padding              :3px 0;
+  text-align           :center;
+  width                :50px;
+  -moz-border-radius   :5px;
+  -webkit-border-radius:5px;
+}
+
+.error {
+  background-color: red;
+  padding         : 5px 20px;
+  color           : white;
 }

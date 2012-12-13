@@ -72,6 +72,9 @@
             <legend>
               Mi Formulario
             </legend>
+
+            <div class="errores"></div>
+
             <div class="campo">
               <label for="nombre">Nombre</label>
               <input required="true" type="text" id="nombre" name="nombre">
@@ -79,7 +82,7 @@
 
             <div class="campo">
               <label for="correo">Correo</label>
-              <input placeholder="higher.vnf@gmail.com" type="email" id="correo" name="correo">
+              <input required placeholder="higher.vnf@gmail.com" type="email" id="correo" name="correo">
             </div>
 
             <div class="campo">
@@ -165,6 +168,8 @@
 
   <!-- Form tools: Dateinput, Rangeinput and Validator. No jQuery library. ( Kb) -->
   <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+  <script src="http://html5form.googlecode.com/svn/trunk/jquery.html5form-1.5-min.js"></script>
 
 
   <script type="text/javascript" src="js/dia3.js"></script>

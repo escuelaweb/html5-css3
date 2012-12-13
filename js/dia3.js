@@ -3,9 +3,16 @@
 $(document).ready(function() {
 
   // Aqui debe ir nuestro contenido
-  $(":range").rangeinput();
-  $(":date").dateinput(); 
-  $("#formualariohtml5").validator();
+  // $(":range").rangeinput();
+  // $(":date").dateinput(); 
+  // $("#formualariohtml5").validator();
+
+  $('#formualariohtml5').html5form({
+    
+        messages : 'es', // Options 'en', 'es', 'it', 'de', 'fr', 'nl', 'be', 'br'
+        responseDiv : '.errores'
+    
+    })
 
   /* 
 
