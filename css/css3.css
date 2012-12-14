@@ -1,0 +1,94 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -20px;
+}
+
+.untercio {
+  width: 300px;
+  margin-left: 20px;
+  float: left;
+
+  padding: 10px;
+  border-right: 4px solid #2D2D2D;
+}
+
+/* 
+  
+  n = 1,2,3 o cualquier entero
+
+  quiero que se repita cada x veces
+  xn
+
+  Si quiero aplicarlo cada X veces comenzando por Z
+  xn+z
+
+  Pares 
+  even
+
+  Impares
+  odd
+
+  pseudo clase para aplicarle algo al primero
+  :first-child
+
+*/
+
+
+.untercio:nth-child(3n+3) {
+  border-right: none;
+}
+
+/* 
+.untercio:after {
+  content: "";
+  display: block;
+  height: 80px;
+  padding: 20px;
+  height: 40px;
+  background-color: #FFE500;
+}
+.untercio:before {
+  content: "";
+  display: block;
+  height: 80px;
+  padding: 20px;
+  height: 40px;
+  background-color: #FF001E;
+} */
+
+/* .triangulo {
+  display:inline-block;
+  box-sizing: content-box;
+  width: 0;
+  height: 0px;
+  border-bottom: 30px solid #000000;
+  border-left: 30px solid transparent;
+  border-radius:  0  0 50px 0;
+} */
+
+.boton {
+  display         : inline-block;
+  padding         : 20px 30px;
+  background-color: #49435E;
+  color           : #FFFFFF;
+  text-decoration : none;
+  border-radius   : 5px 50px 5px 50px;
+  box-shadow: inset 0px 1px 0px 1px #D4D4D4 ;
+}
+
+/* .circle {
+  display: block;
+  width        : 100px;
+  height       : 100px;
+  border-radius: 50px;
+  background-color: #FFEC00;
+} */
