@@ -81,10 +81,162 @@
   background-color: #49435E;
   color           : #FFFFFF;
   text-decoration : none;
-  border-radius   : 5px 50px 5px 50px;
-  box-shadow: inset 0px 1px 0px 1px #D4D4D4 ;
+  border-radius   : 30px;
+  box-shadow: 0px 1px 0px 0px #2F2847, 
+              inset 0px 1px 0px 0px #8A8795,
+              0px 2px 0px 0px #B500FF,
+              0px 3px 0px 0px #FDFF00,
+              inset 0px 4px 2px 0px rgba(243,200,200, 0.5);
+  text-shadow: 0px -1px 0 #000000;
+  
+  transition: all 700ms ease;
+  -webkit-transition: all 700ms ease;
+
 }
 
+
+.boton:hover {
+  -webkit-animation: darvuelta 5000ms 1;
+  -moz-animation   : darvuelta 5000ms 1;
+  -ms-animation    : darvuelta 5000ms 1;
+  -o-animation     : darvuelta 5000ms 1;
+  animation        : darvuelta 5000ms 1;
+}
+
+@media screen and (max-width: 800px)  {
+  .boton {
+    background-color: #FF0043;
+  }
+  .untercio {
+    width: 100%;
+  }
+  .container {
+    width: 600px;
+  }
+}
+
+
+@keyframes "darvuelta" {
+ 0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+ }
+ 25% {
+    -webkit-transform: rotate(-90deg) scale(1.5);
+    -moz-transform: rotate(-90deg) scale(1.5);
+    -o-transform: rotate(-90deg) scale(1.5);
+    -ms-transform: rotate(-90deg) scale(1.5);
+    transform: rotate(-90deg) scale(1.5);
+ }
+ 50% {
+    -webkit-transform: rotate(90deg) scale(1.5);
+    -moz-transform: rotate(90deg) scale(1.5);
+    -o-transform: rotate(90deg) scale(1.5);
+    -ms-transform: rotate(90deg) scale(1.5);
+    transform: rotate(90deg) scale(1.5);
+ }
+ 100% {
+    -webkit-transform: rotate(90deg) scale(1.5) translateX(100);
+    -moz-transform: rotate(90deg) scale(1.5) translateX(100);
+    -o-transform: rotate(90deg) scale(1.5) translateX(100);
+    -ms-transform: rotate(90deg) scale(1.5) translateX(100);
+    transform: rotate(90deg) scale(1.5) translateX(100);
+ }
+
+}
+
+@-moz-keyframes darvuelta {
+ 0% {
+   -moz-transform: rotate(0);
+   transform: rotate(0);
+ }
+ 25% {
+   -moz-transform: rotate(-90deg) scale(1.5);
+   transform: rotate(-90deg) scale(1.5);
+ }
+ 50% {
+   -moz-transform: rotate(90deg) scale(1.5);
+   transform: rotate(90deg) scale(1.5);
+ }
+ 100% {
+   -moz-transform: rotate(90deg) scale(1.5) translateX(100);
+   transform: rotate(90deg) scale(1.5) translateX(100);
+ }
+
+}
+
+@-webkit-keyframes "darvuelta" {
+ 0% {
+   -webkit-transform: rotate(0);
+   transform: rotate(0);
+ }
+ 25% {
+   -webkit-transform: rotate(-90deg) scale(1.5);
+   transform: rotate(-90deg) scale(1.5);
+ }
+ 50% {
+   -webkit-transform: rotate(90deg) scale(1.5);
+   transform: rotate(90deg) scale(1.5);
+ }
+ 100% {
+   -webkit-transform: rotate(90deg) scale(1.5) translateX(100);
+   transform: rotate(90deg) scale(1.5) translateX(100);
+ }
+
+}
+
+@-ms-keyframes "darvuelta" {
+ 0% {
+   -ms-transform: rotate(0);
+   transform: rotate(0);
+ }
+ 25% {
+   -ms-transform: rotate(-90deg) scale(1.5);
+   transform: rotate(-90deg) scale(1.5);
+ }
+ 50% {
+   -ms-transform: rotate(90deg) scale(1.5);
+   transform: rotate(90deg) scale(1.5);
+ }
+ 100% {
+   -ms-transform: rotate(90deg) scale(1.5) translateX(100);
+   transform: rotate(90deg) scale(1.5) translateX(100);
+ }
+
+}
+
+@-o-keyframes "darvuelta" {
+ 0% {
+   -o-transform: rotate(0);
+   transform: rotate(0);
+ }
+ 25% {
+   -o-transform: rotate(-90deg) scale(1.5);
+   transform: rotate(-90deg) scale(1.5);
+ }
+ 50% {
+   -o-transform: rotate(90deg) scale(1.5);
+   transform: rotate(90deg) scale(1.5);
+ }
+ 100% {
+   -o-transform: rotate(90deg) scale(1.5) translateX(100);
+   transform: rotate(90deg) scale(1.5) translateX(100);
+ }
+
+}
+
+
+
+/* 
+body {
+  background: url(../img/hola.png) no-repeat 500px 100px,
+              url(../img/Xbox360.jpg) no-repeat 0 0,
+              url(../img/chao.png) repeat-x center bottom;
+}
+ */
 /* .circle {
   display: block;
   width        : 100px;
