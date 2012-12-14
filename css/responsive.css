@@ -188,17 +188,47 @@ section article header h1 {
 
 /* Large desktop */
 @media (min-width: 1200px) { 
-
+  [class*="span"] {  margin-left: 30px; }
+  .row { margin-left: -30px; }
+  .container { width: 1170px; }
+  .span1  { width: 70px;}
+  .span2  { width: 170px;}
+  .span3  { width: 270px;}
+  .span4  { width: 370px;}
+  .span5  { width: 470px;}
+  .span6  { width: 570px;}
+  .span7  { width: 670px;}
+  .span8  { width: 770px;}
+  .span9  { width: 870px;}
+  .span10 { width: 970px;}
+  .span11 { width: 1070px;}
+  .span12 { width: 1170px;}
 } 
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
-
+  [class*="span"] { margin-left: 20px; }
+  .row { margin-left: -20px; }
+  .container { width: 820px; }
+  .span1  { width: 50px;}
+  .span2  { width: 120px;}
+  .span3  { width: 190px;}
+  .span4  { width: 260px;}
+  .span5  { width: 330px;}
+  .span6  { width: 400px;}
+  .span7  { width: 470px;}
+  .span8  { width: 540px;}
+  .span9  { width: 610px;}
+  .span10 { width: 680px;}
+  .span11 { width: 750px;}
+  .span12 { width: 820px;}
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
-
+  .row { margin-left: 0px; }
+  .container { width: 96%; }
+  [class*="span"] { width: 100%; margin-left: 0; }
 }
  
 /* Landscape phones and down */
