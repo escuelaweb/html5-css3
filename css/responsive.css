@@ -1,4 +1,10 @@
 
+img {
+  width: 100%;
+  image-rendering:optimizeQuality; 
+  -ms-interpolation-mode:bicubic;
+}
+
 .ubuntu {
   font-family: 'Ubuntu', sans-serif;
 }
