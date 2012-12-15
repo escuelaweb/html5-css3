@@ -276,7 +276,7 @@ section article header h1 {
 @media (max-width: 767px) { 
   .row { margin-left: 0px; }
   .container { width: 96%;}
-  [class*="span"] { width: 100%; margin-left: 0; }
+  [class*="span"] { width: 100%; margin-left: 0; min-width: 300px; }
 
   .masterheader {
     height: auto;
