@@ -5,10 +5,13 @@ body {
 
 img {
   width: 100%;
-  image-rendering:optimizeQuality; 
-  -ms-interpolation-mode:bicubic;
+  image-rendering: optimizeQuality; 
+  -ms-interpolation-mode: bicubic;
 }
-
+iframe {
+  width: 100%;
+  height: auto;
+}
 .ubuntu {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -271,9 +274,60 @@ section article header h1 {
   .span11 { width: 662px;}
   .span12 { width: 724px;}
 }
- 
+
+
+@media screen and (orientation:portrait) and (min-width: 768px) and (max-width: 979px) {
+  
+  [class*="span"] { margin-left: 20px; }
+  .row { margin-left: -20px; }
+  .container { width: 724px; }
+  .masterheader {
+    height: auto;
+    width: 100%;
+  }
+  #navigation {
+    display: none;
+    opacity: 0;
+    visibility: visible;
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    background-color: #8E8E8E;
+    box-shadow: 1px 0 2px 0 #3B3B3B;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  #primary-menu {
+    display: none;
+    opacity: 0;
+    visibility: visible;
+    margin-left: -20px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .toggle-menu {
+    display: block;
+  }
+  .site-title {
+    position: relative;
+    left: 40px;
+  }
+
+  #primary-menu li {
+    float: none;
+  }
+}
+
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
+@media (max-width: 767px)  { 
   .row { margin-left: 0px; }
   .container { width: 96%;}
   [class*="span"] { width: 100%; margin-left: 0; min-width: 300px; }
@@ -294,10 +348,11 @@ section article header h1 {
     background-color: #8E8E8E;
     box-shadow: 1px 0 2px 0 #3B3B3B;
     -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+    behavior: url(pie/PIE.htc);
   }
   #primary-menu {
     display: none;
@@ -310,6 +365,7 @@ section article header h1 {
     -o-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     transition: all 500ms ease;
+    behavior: url(pie/PIE.htc);
   }
   .toggle-menu {
     display: block;
