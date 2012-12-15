@@ -285,33 +285,43 @@ section article header h1 {
     height: auto;
     width: 100%;
   }
+  .span3 { width: 228px;}
+  .span6 { width: 476px;}
+  .span9 { width: 724px;}
+
   #navigation {
-    display: none;
-    opacity: 0;
-    visibility: visible;
-    width: 220px;
-    height: 100%;
-    position: fixed;
-    top: 40px;
-    left: 0;
-    background-color: #8E8E8E;
-    box-shadow: 1px 0 2px 0 #3B3B3B;
+    display           : none;
+    opacity           : 0;
+    visibility        : visible;
+    width             : 220px;
+    height            : 100%;
+    position          : fixed;
+    top               : 40px;
+    left              : 0;
+    background-color  : #8E8E8E;
+    box-shadow        : 1px 0 2px 0 #3B3B3B;
     -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    transition: all 500ms ease;
+    -moz-transition   : all 500ms ease;
+    -o-transition     : all 500ms ease;
+    -ms-transition    : all 500ms ease;
+    transition        : all 500ms ease;
   }
   #primary-menu {
-    display: none;
-    opacity: 0;
-    visibility: visible;
-    margin-left: -20px;
+    clear             : both;
+    float             : none;
+    width             : 100%;
+    display           : none;
+    opacity           : 0;
+    visibility        : visible;
+    margin-left       : 0;
     -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    transition: all 500ms ease;
+    -moz-transition   : all 500ms ease;
+    -o-transition     : all 500ms ease;
+    -ms-transition    : all 500ms ease;
+    transition        : all 500ms ease;
+  }
+  #primary-menu li {
+    float: none;
   }
   .toggle-menu {
     display: block;
@@ -319,10 +329,6 @@ section article header h1 {
   .site-title {
     position: relative;
     left: 40px;
-  }
-
-  #primary-menu li {
-    float: none;
   }
 }
 
